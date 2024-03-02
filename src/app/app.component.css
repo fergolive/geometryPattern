@@ -29,7 +29,7 @@
   
  }
 
- .table{
+ .table-x{
   height: 100%;
   width: 100%;
   justify-content: center;
@@ -42,6 +42,20 @@
   grid-template-rows: repeat(10,100px); */
 }
 
+.table{
+ 
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    grid-gap: 0px;
+  
+  
+  
+}
+
+.box {
+ 
+ 
+}
 
  .pic-colors{
  gap: 10px;
@@ -58,7 +72,7 @@
 
  
 
-  .box{
+  .box-x{
    
    
     display: flex;
@@ -67,17 +81,39 @@
     align-items: center;
   }
 
-  .semicirculo-1 {
+  .semicirculo-1-x {
     
     width: 100px;
     height: 50px;
     background-color: #e7ad42;
     border-top-left-radius: 50px;
     border-top-right-radius: 50px;
-    overflow: hidden; /* para ocultar el resto del círculo */
+    overflow: hidden; 
 }
 
-.semicirculo-2 {
+ .semicirculo-1{
+  width: 50vw; /* El 50% del ancho de la ventana del navegador */
+  height: 25vw; /* La mitad del ancho */
+  max-width: 100px; /* Máximo de 100px */
+  max-height: 50px; /* Máximo de 50px */
+  background-color: #e7ad42;
+  border-top-left-radius: 50vw; /* El 50% del ancho de la ventana del navegador */
+  border-top-right-radius: 50vw; /* El 50% del ancho de la ventana del navegador */
+  overflow: hidden; 
+ }
+
+ .semicirculo-2{
+  width: 50vw; /* El 50% del ancho de la ventana del navegador */
+  height: 25vw; /* La mitad del ancho */
+  max-width: 100px; /* Máximo de 100px */
+  max-height: 50px; /* Máximo de 50px */
+  background-color: #e76b42;
+  border-bottom-left-radius: 50vw; /* El 50% del ancho de la ventana del navegador */
+  border-bottom-right-radius: 50vw; /* El 50% del ancho de la ventana del navegador */
+  overflow: hidden; 
+ }
+
+.semicirculo-2-x {
     width: 100px;
     height: 50px;
     background-color: #e74242;

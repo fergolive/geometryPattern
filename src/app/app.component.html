@@ -70,21 +70,13 @@
       emoji=""
       label="Descargar"
       icon=""
-      (click)="downloadSVG()"
+      (click)="download()"
       [color]="'pri'"
       [button]="'btn'"
       >
     </btn>
 
-    <btn
-      emoji=""
-      label="crear svg"
-      icon=""
-      (click)="create()"
-      [color]="'pri'"
-      [button]="'btn'"
-      >
-    </btn>
+   
     
   </div>
       
@@ -94,9 +86,7 @@
 
 
 <canvas id="canvas" style="display: none;"></canvas>
-<div #canvasDiv>
-  <canvas #canvasElement></canvas>
-</div>
+
   
   
   

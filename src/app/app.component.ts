@@ -54,7 +54,7 @@ objcontenede.appendChild(svg);
   
 
   download(){
-    let table = document.getElementById("card-table") as HTMLElement;
+    let table = document.getElementById("table") as HTMLElement;
     table.style.width = '1920px';
     table.style.height = '1080px';
     
