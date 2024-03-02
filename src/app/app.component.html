@@ -1,71 +1,104 @@
-<div class="page-container">
+<div class="card-table" id="card-table" #colorDiv>
+  <div class="table" id="table">
+    @for (item of items$; track $index) {
+    <div class="box" id="{{ $index }}">
+      <div class="semicirculo-1" id="{{ $index }}a"></div>
+      <div class="semicirculo-2" id="{{ $index }}b"></div>
+    </div>
+    }
+  </div>
+</div>
+
+
+<div class="panel">
+  <div id="svg-obj">
+
+  </div>
+
   <div class="full-wrapper">
     <div class="center-element">
+
       <div class="card">
         Elije los colores
+        
+        <div class="pic-colors">
 
-        <input
+          <input
           type="color"
           id="colorPicke1r"
           name="colorPicker"
           [(ngModel)]="colors[1]"
-        />
-        <input
+          />
+
+          <input
           type="color"
           id="colorPicker2"
           name="colorPicker"
           [(ngModel)]="colors[2]"
-        />
+          />
+
         <input
-          type="color"
-          id="colorPicker3"
-          name="colorPicker"
+        type="color"
+        id="colorPicker3"
+        name="colorPicker"
           [(ngModel)]="colors[3]"
         />
-      </div>
-
-      <!--  <div class="card">
-    Cantidad de cuadros<input type="text" [(ngModel)]="itemsSize">
-  </div> -->
-
-      <div class="card">
+        </div>
+        
         <btn
-          emoji=""
+        emoji=""
           label="Cambiar colores"
           icon=""
           (click)="changeColors()"
           [color]="'pri'"
           [button]="'btn'"
         >
-        </btn>
-      </div>
+      </btn>
+      
+      
+      <btn
+      emoji=""
+      label="Generar Geo Pattern"
+      icon=""
+      (click)="generatePattern()"
+      [color]="'pri'"
+      [button]="'btn'"
+      >
+    </btn>
 
-      <div class="card">
-        <btn
-          emoji=""
-          label="Generar Geo Pattern"
-          icon="dollars"
-          (click)="generatePattern()"
-          [color]="'pri'"
-          [button]="'btn'"
-        >
-        </btn>
-      </div>
+    <btn
+      emoji=""
+      label="Descargar"
+      icon=""
+      (click)="downloadSVG()"
+      [color]="'pri'"
+      [button]="'btn'"
+      >
+    </btn>
 
+    <btn
+      emoji=""
+      label="crear svg"
+      icon=""
+      (click)="create()"
+      [color]="'pri'"
+      [button]="'btn'"
+      >
+    </btn>
+    
+  </div>
+      
     </div>
   </div>
-
-      <div class="card-table" >
-        <div class="table">
-          @for (item of items$; track $index) {
-          <div class="box" id="{{ $index }}">
-            <div class="semicirculo-1" id="{{ $index }}a"></div>
-            <div class="semicirculo-2" id="{{ $index }}b"></div>
-          </div>
-          }
-        </div>
-      </div>
-
-     
-   
 </div>
+
+
+<canvas id="canvas" style="display: none;"></canvas>
+<div #canvasDiv>
+  <canvas #canvasElement></canvas>
+</div>
+  
+  
+  
+  
+  
