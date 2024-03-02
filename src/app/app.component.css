@@ -1,0 +1,56 @@
+
+.page-container{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    height: 100vh;
+    gap: 10px;
+    padding: 10px 10px 80px 10px;
+    border-radius: 15px;
+    color: var(--txt-color);
+    position: relative;
+    min-width: 100%;
+    width: auto;
+  }
+  
+ 
+
+  .table{
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: flex-start;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+   /*  grid-template-columns: repeat(10,100px);
+    grid-template-rows: repeat(10,100px); */
+  }
+
+  .box{
+   
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .semicirculo-1 {
+    
+    width: 100px;
+    height: 50px;
+    background-color: #e7ad42;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    overflow: hidden; /* para ocultar el resto del círculo */
+}
+
+.semicirculo-2 {
+    width: 100px;
+    height: 50px;
+    background-color: #e74242;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    overflow: hidden; /* para ocultar el resto del círculo */
+}

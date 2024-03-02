@@ -1,0 +1,137 @@
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+    color: var(--bg-color);
+    padding: 10px;
+    border-radius: 6px;
+    gap: 8px;
+    transition: transform 2s ease-in-out ;
+    width: 100%;
+    flex-grow: 1;
+    font-size: 14px;
+}
+
+.btn-reverse{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+    color: var(--bg-color);
+    padding: 10px;
+    border-radius: 6px;
+    gap: 8px;
+    transition: transform 2s ease-in-out ;
+    width: 100%;
+    flex-grow: 1;
+    font-size: 14px;
+}
+
+.btn-s{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    flex-direction: row;
+    color: var(--dark-color);
+    padding: 8px 20px 8px 20px;
+    border-radius: 6px;
+    gap: 10px;
+    transition: transform 2s ease-in-out ;
+    min-width: 100%;
+    flex-grow: 1;
+    width: auto;
+    border: var(--bg-color) 1px solid;
+}
+
+.btn:disabled{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: not-allowed;
+    display: flex;
+    color: rgb(44, 44, 44);
+    padding: 10px;
+    border-radius: 6px;
+    gap: 10px;
+    transition: transform 2s ease-in-out ;
+    width: 100%;
+    flex-grow: 1;
+    border: 1px solid rgb(44, 44, 44);
+    font-size: 14px;
+}
+
+
+
+.btn-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    cursor: pointer;
+    color: var(--bg-color);
+    padding: 4px;
+    border-radius: 20px;
+    gap: 4px;
+    transition: transform 2s ease-in-out ;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.paypal{
+    background-color: #1f264f;
+    color: var(--card-color);
+}
+
+.mercadopago{
+    background-color: #009ee3;
+}
+.pix{
+    background-color: #37b4aa;
+}
+
+.stripe{
+    background-color: #635bff;
+}
+.pri{
+    background-color: var(--pri-color);
+   
+}
+
+.disabled{
+    background-color: var(--bg-color);
+    color: rgb(44, 44, 44);
+}
+
+.wsp{
+    background-color: var(--wsp-color);
+    color: white;
+}
+
+.second{
+    background-color: var(--second-color);
+}
+
+.f{
+    color: var(--txt-color);
+    background-color: var(--txt-dis-color);
+}
+
+
+.animate-spin	{
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+

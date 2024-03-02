@@ -1,1 +1,116 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Sanchez:ital@0;1&display=swap');
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+  --bg-color: #1c3041;
+    --txt-color:#303030;
+    --txt-dis-color:#ABABAB;
+    --pri-color: #18f2b2;
+    --second-color: #CD68F7;
+    --bg-light-color: rgb(255, 239, 16);
+    --wsp-color: #25d366;
+    --third-color: #d53968;
+    --f-color:#38C0B3;
+    --neutral-color: #878787;
+    --card-color:#f7f7f7;
+}
+
+html,
+body {
+  user-select: none;
+  background: var(--bg-color);
+  height: 100vh;
+  margin: 0;
+  padding: 0px;
+  scroll-behavior: smooth;
+}
+
+
+* {
+    font-family: "Sanchez", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.space {
+  background-color: transparent;
+  width: 100%;
+  height: 60px;
+}
+
+
+
+.full-wrapper{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  height: auto;
+}
+
+.full-wrapper-right{
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  margin: 0;
+  padding: 0;
+  height: auto;
+  
+}
+
+.center-element{
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  max-width: 600px;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+}
+
+.router-title{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  width: 100%;
+  gap: 6px;
+}
+
+.page-container{
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  height: 100vh;
+  gap: 10px;
+  padding: 10px 10px 80px 10px;
+  border-radius: 15px;
+  color: var(--txt-color);
+  position: relative;
+  min-width: 100%;
+  width: auto;
+}
+
+.card{
+  padding: 6px;
+  border-radius: 6px;
+  background-color: var(--card-color);
+  gap: 10px;
+  display: grid;
+  max-width: 600px;
+  width: 100%;
+ 
+  
+}
+
+
+
+
+
+
